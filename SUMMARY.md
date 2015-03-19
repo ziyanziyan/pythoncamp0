@@ -1,7 +1,8 @@
 # Summary
 
 * [101 学习记录]
-	* [Github](github_101_ziyan.md)
-	* [Gitbook](gitbook_101_ziyan.md)
-	* [Markdown](markdown_101_ziyan.md)
-	* [Mailing-list](mailing-list_101_ziyan.md)
+	* [Github 101](github_101_ziyan.md)
+	* [Gitbook 101](gitbook_101_ziyan.md)
+	* [Markdown 101](markdown_101_ziyan.md)
+	* [Mailing-list 101](mailing-list_101_ziyan.md)
+	* [Python 101](python_101_ziyan.md)
