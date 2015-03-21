@@ -1,18 +1,15 @@
 # Markdown 教程
 
 ## Markdown 是什么
-Markdown
+Markdown是一款轻量文字编辑器。
 
 ## Markdown 编辑器
 * Online
-	* 马克飞象  
-	
+	* 马克飞象  	
 
 * Offline
 	* Mac  
 		* MOU：
-	* PC  
-		* xxx
 
 ## Markdown Cheatsheet  
 
@@ -32,8 +29,8 @@ Markdown
 	`1. 列表一`  
 	`2. 列表二`
 	* 显示  
-		1. 列表一  
-		2. 列表二
+	1. 列表一  
+	2. 列表二
 2. 无序列表
 	* 格式：  
 	`* 列表一`  
@@ -42,8 +39,8 @@ Markdown
 		* 列表一  
 		* 列表二
 	* 补充  
-		1. 除了`*`，还可使用`+`或`-`
-		2. 列表符号后均有一个空格
+	1. 除了`*`，还可使用`+`或`-`
+	2. 列表符号后均有一个空格
 
 3. 黑体  
 	* 格式：  
@@ -67,8 +64,8 @@ Markdown
 	* 若需调整大小，可使用 HTML 的 `<img>` 标签插入图片
 5. 若需显示内容，可以将内容放在两个 “ ` ”（英文输入法下tab上面的按键）之间
 6. 字体颜色
-	* 格式： `<font color = "purple">紫色文字</font>`
-	* 显示：<font color = "purple">紫色文字</font>
+	* 格式： `<font color = purple>紫色文字</font>`
+	* 显示：<font color = purple>紫色文字</font>
 	* 补充：
 		1. 此条是利用 Markdown 支持 HTML 语法的性质
 		2. 常用颜色采用英文即可，如 black white blue purple pink grey，特殊颜色使用颜色代码`<font color = #六位颜色代码>文字</font>`，颜色代码可查询 [HTML_Color](http://www.w3schools.com/html/html_colors.asp)
