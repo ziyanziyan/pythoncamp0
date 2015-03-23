@@ -31,6 +31,23 @@
 
 * 当提示需要输入用户名和密码时有一个需要注意的地方：输入密码并不在 Terminal 内显示任何变化，就像没输入一样，但实际上它在记录哦，所以认真敲对之后按回车就好了，它会继续验证。
 
+## 增加 Disqus
+* 在 https://disqus.com 上注册
+* 注册后在右上角设置中选择 Add Disqus to your site，其 Choose your unique Disqus URL 中在 .disqus 之前的部分将成为你在 GutHub 的 book.json 中引用的shortname。
+* 设置好后可通过 [你的shortname].disqus.com 进入这个版块
+在 book.json 中添加
+   
+        {
+            "plugins": ["disqus"],
+            "pluginsConfig": {
+                "disqus": {
+                    "shortName": "[你的shortname]"
+                }
+            }  
+        }
+
+* 推送后即可在 Gitbook 中看见评论版。
+
 ## 遇见并拍死了哪些 Bug
 
 * Gitbook 推送失败 while 同时推送的 Github 成功。在 Gitbook 的 History 中看见红色的叹号，提示“Cannot read property 'text' of undefined”。经 Google 了解到是因为 SUMMARY.md 中 list 和 list 之间被我不小心多加了空行。
