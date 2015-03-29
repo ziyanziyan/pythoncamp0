@@ -48,6 +48,28 @@
 
 * 推送后即可在 Gitbook 中看见评论版。
 
+## 在本地发布 PDF
+
+鉴于从 Gitbook 网站下载的 PDF 中文字体过于奇葩，于是尝试使用 Node.js 本地发布。
+
+* Node.js 是什么  
+Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。  
+
+* Gitbook 配置，见[链接](http://www.joyios.com/?p=164)
+	* 可能遇到的问题（都不懂原理惹...）
+		1. 是否需要 sudo
+		2. 是否需要科学上网
+		3. unlock 问题，见[链接](https://github.com/npm/npm/issues/4815)，我使用其中的  
+	
+	            sudo chown -R `whoami` ~/.npm
+                sudo chown -R `whoami` /usr/local/lib/node_modules
+     和  
+     
+            sudo chown -R `whoami` /usr/local
+         
+          解决了问题..
+* 下一步就是调整格式，把 PDF 变好看啦。  
+     
 ## 遇见并拍死了哪些 Bug
 
 * Gitbook 推送失败 while 同时推送的 Github 成功。在 Gitbook 的 History 中看见红色的叹号，提示“Cannot read property 'text' of undefined”。经 Google 了解到是因为 SUMMARY.md 中 list 和 list 之间被我不小心多加了空行。

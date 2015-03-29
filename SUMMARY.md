@@ -6,3 +6,6 @@
 	* [Markdown 101](markdown_101_ziyan.md)
 	* [Mailing-list 101](mailing-list_101_ziyan.md)
 	* [Python 101](python_101_ziyan.md)
+* 想什么呢
+	* [为什么集](whywhy.md)
+	
