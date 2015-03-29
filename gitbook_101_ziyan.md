@@ -55,7 +55,7 @@
 * Node.js 是什么  
 Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。  
 
-* Gitbook 配置，见[链接](http://www.joyios.com/?p=164)
+* Gitbook 配置，见[GITBOOK 配置](http://www.joyios.com/?p=164)，另外[Mac下GitBook制作电子书](http://m.blog.csdn.net/blog/q312998164/43278177)也说的比较清楚
 	* 可能遇到的问题（都不懂原理惹...）
 		1. 是否需要 sudo
 		2. 是否需要科学上网
@@ -68,7 +68,13 @@ Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便�
             sudo chown -R `whoami` /usr/local
          
           解决了问题..
-* 下一步就是调整格式，把 PDF 变好看啦。  
+* 下一步就是调整格式，把 PDF 变好看啦。 
+直接生成的 PDF 格式怪怪的，比如每页页眉会有书名... 于是删掉了已生成的 _book 文件夹，添加 book.json 文件，向里面添加格式要求。  
+p.s. 可使用 http://jsonlint.com 来测试 book.json 是否 validate，如果不 validate，在生成 PDF 的过程中会显示`Unexpected token /`哦。
+
+**问题**  
+1. gitignore 是什么？怎么用？  
+2. 页眉页脚都给我显示 null 是什么鬼 哎哎 先睡 ...
      
 ## 遇见并拍死了哪些 Bug
 
