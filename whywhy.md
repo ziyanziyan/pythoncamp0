@@ -9,13 +9,41 @@ Finder的文件划分结构下，**如果你还钟情于传统的文件夹管理
 Source: [Mac 软件面面观（二）文档管理](http://www.jianshu.com/p/0237546964af)  
 
 	* 我把文件都装在哪里？怎么就直接开始`  $ xxx yyy zzz  ` 了？  
+	> [Mac开发配置手册](http://aaaaaashu.gitbooks.io/mac-dev-setup/content/)
 	* 管理员权限在哪些目录下需要 （比对 Windows 修改 C 盘下 Systems 文件）？  
 	* sudo 的来龙去脉？  
 	* 博客的标题是问题，正文就一行代码，是怎么个意思？  
 	* 无数多程序员，学出来能给小白看的教程找得出来几个？可以不酱吗。    
 
+* zsh  
+密码又按错了，于是第一次
+   
+          Time to change your default shell to zsh!
+          Changing shell for Ziyan.
+          
+   失败...  于是搜到 [网址](http://osxdaily.com/2012/03/21/change-shell-mac-os-x/)，输入
+
+          $ chsh -s /bin/zsh
+
+   就好了！  
+   
 
 * 最优与绕路  
 本地发布 PDF 到底有几种方式，哪种最快最简单，是否一定要下载一个两个三个软件安装后才可以？  
-背后的原理搞不清，问题解决也是稀里糊涂。稀里糊涂度过一个坑，再跳进另一个坑，似乎只有反反复复才可以终有一天知道，噢，原来是这样？
+背后的原理搞不清，问题解决也是稀里糊涂。稀里糊涂度过一个坑，再跳进另一个坑，似乎只有反反复复才可以终有一天知道，噢，原来是这样？  
+
+* 实际上编程思维的语言特别简单，比如：
+   
+        Error: /usr/local/opt/makedepend not present or broken
+   
+   那就是 makedepend not present or broken. 可是不 Google 却很难完全确定到底是要我干什么对吧。于是难得人性化还会有一句提示说：
+    
+        Please reinstall makedepend. Sorry :(
+       
+   怎么 reinstall makedepend 却又是个障碍。我没有 install 过啊，怎么就 REinstall 了呢？继续 Google，知道说，ok，那我应该：
+   
+        $ brew install makedepend
+        
+   还真是有一说一啊。==b 没理解这套语言和思路体系之前，真的觉得 WTF 噢！
+      
 
